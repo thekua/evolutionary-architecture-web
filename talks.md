@@ -20,3 +20,4 @@ layout: article
  - [SE-Radio Episode 236: Rebecca Parsons on Evolutionary Architecture](http://www.se-radio.net/2015/08/se-radio-episode-236-rebecca-parsons-on-evolutionary-architecture/)
  - [ThoughtWorks podcast - Evolutionary Architecture with Rebecca Parsons and Neal Ford](https://soundcloud.com/thoughtworks/evolutionary-architecture-with-rebecca-parsons-and-neal-ford)
  - [ThoughtWorks podcast - Defining Evolutionary Architecture with Neal Ford](https://soundcloud.com/thoughtworks/defining-evolutionary-architecture-with-neal-ford)
+ - [Neal Ford on evolutionary architecture](https://www.oreilly.com/ideas/neal-ford-on-evolutionary-architecture)
