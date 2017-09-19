@@ -38,11 +38,11 @@ We offer a new perspective on evolving architecture, making "evolvability" a fir
 The concepts of evolutionary architecture also help automate previously underserved constituents ("non-functional requirements") by providing a framework for identifying important dimensions, with their critical characteristics, and the mechanism (via fitness functions) for verifying the veracity of those attributes continually. This in turn allows architects to build systems that support ongoing change with confidence that important qualities won't degrade. Identification of architecture dimension and fitness function occurs at both project inception and as an ongoing concern, building continual architecture.
 
 ## Table of Contents
-* Software Architecture
-* Fitness Functions
-* Engineering Incremental Change
-* Architectural Coupling
-* Evolutionary Data
-* Building Evolvable Architectures
-* Evolutionary Architecture Pitfalls and Antipatterns
-* Putting Evolutionary Architecture into Practice
+1. Software Architecture
+1. Fitness Functions
+1. Engineering Incremental Change
+1. Architectural Coupling
+1. Evolutionary Data
+1. Building Evolvable Architectures
+1. Evolutionary Architecture Pitfalls and Antipatterns
+1. Putting Evolutionary Architecture into Practice
