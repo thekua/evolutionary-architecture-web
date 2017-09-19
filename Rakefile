@@ -11,11 +11,12 @@ ADOC_PROC = "/Users/nford/.rvm/gems/ruby-1.9.3-head/bin/asciidoctor"
 # Which files should be deleted during clean or clobber tasks
 #CLEAN.include("#{DEST}/**/*.html")
 
+
 # A method to create a shorter name for a task
-def alias_task name, old_name
-  t = Rake::Task[old_name]
+def alias_task  task_name, alias_name
+  t = Rake::Task[task_name]
   desc t.full_comment if t.full_comment
-  task name, *t.arg_names do |_, args|
+  task alias_name, *t.arg_names do |_, args|
     # values_at is broken on Rake::TaskArguments
     args = t.arg_names.map { |a| args[a] }
     t.invoke(args)
@@ -37,19 +38,19 @@ task :commit_push => [:pull] do
   sh "git commit -a -m'#{commit_message}'"
   sh "git push"
 end
-alias_task :cp, :commit_push
-alias_task :copu, :commit_push
+alias_task :commit_push, :cp
+alias_task :commit_push, :copu
 
 task :pull do
   sh("git pull")
 end
-alias_task :ll, :pull
-alias_task :up, :pull
+alias_task :pull, :ll
+alias_task :pull, :up
 
 task :status => [:pull] do
   sh("git status")
 end
-alias_task :st, :status
+alias_task :status, :st
 
 task :publish => [:pull] do
   sh "git checkout gh-pages"
@@ -57,6 +58,7 @@ task :publish => [:pull] do
   sh "git push origin gh-pages"
   sh "git checkout master"
 end
+alias_task :publish, :pub
 
 
 desc "Finds missing image files"
