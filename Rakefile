@@ -60,7 +60,13 @@ task :publish => [:pull] do
 end
 alias_task :publish, :pub
 
+task :test do
+  system("echo http://0.0.0.0:4000/ | pbcopy")
+  system("bundle exec jekyll serve")
+end
 
+
+desc "Note: not customized for this project yet"
 desc "Finds missing image files"
 desc "Prints in the format:"
 desc "file_name:"

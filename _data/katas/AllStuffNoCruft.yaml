@@ -1,0 +1,17 @@
+---
+title: All Stuff, No Cruft
+description: Conference organizer needs a management system for the conferences he runs for both speakers and attendees
+users: hundreds of speakers, dozens of event staff, thousands of attendees
+requirements:
+    - attendees can access speaking schedule online, including room assignments
+    - speakers can manage talks (enter, edit, modify)
+    - attendees 'vote up/down' talks
+    - organizer can notify attendees of schedule changes up-to-the-minute (if attendees opt in)
+    - each conference (being a different subject) can be branded independently
+    - speaker slides are accessible online only to attendees
+    - evaluation system via web page, email, SMS, or phone
+context:
+    - Conference runs across the US.
+    - Very small support staff.
+    - "'Bursty' traffic: extremely busy when conference is occurring."
+    - "Conference organizer wants to easily 'skin' the site for different technology offerings."

@@ -1,0 +1,16 @@
+---
+title: Sysop Squad
+description: An electronics giant needs a new trouble-ticket system for their customer-facing IT consultants (the Sysop Squad) in their stores nationwide
+users: thousands of customers, hundreds of consultants, hundreds of store staff
+requirements:
+    - trouble tickets can be entered by either call-center receptionists, store staff, or customers online
+    - tickets route to the appropriate consultant based on location, availability and skill
+    - consultants should only need a mobile device
+    - customers enter consultant evaluation after service
+    - consultant tracks work performed in customer record(s) for future reference
+context:
+    - "uptime is critical to the company's reputation"
+    - "the site's performance must degrade gracefully under heavy load"
+    - good routing of requests is critical to making a profit
+      
+

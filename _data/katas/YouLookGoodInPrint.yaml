@@ -1,0 +1,16 @@
+---
+title: You Look Good In Print
+description: "A local copy shop chain wants to offer its customers an 'all-in-one' computing experience: document creation, editing, storage, and printing"
+users: initially, thousands in the local city, but potentially millions if the demand grows
+requirements:
+    - browser-based or delivered documents
+    - word processing
+    - presentations
+    - document templates (as start points)
+    - versioning
+    - print scheduling
+    - automatic and manual payment for storage, printing, etc.
+context:
+    - Main reason for this initiative is better customer engagement and loyalty
+    - "for historical reasons, operations is handled by another company and isn't very responsive"
+

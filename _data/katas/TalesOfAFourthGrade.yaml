@@ -1,0 +1,16 @@
+---
+title: Tales Of A Fourth Grade
+description: Company wants to offer an elementary school system comprehensive student management system as a service
+users: faculty, staff and student parents
+requirements:
+    - track absences, tardies and excuses (entered by parents, faculty or staff)
+    - generate reports on student activities
+    - be accessible from the playground
+    - track student grades and assignments (completed and due)
+    - parent-teacher forums
+    - run as an SaaS system from a hosting center
+context:
+    - company plans to undertake an aggressive national sales campaign
+    - current competitor damaged by data breach
+    - new CIO
+    - main marketing pitch is around is flexibility, configurability, and (recently added) security
