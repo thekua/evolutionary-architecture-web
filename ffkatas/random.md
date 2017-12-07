@@ -2,7 +2,7 @@
 layout: article
 ---
 
-<h1>Architectural Katas—Random Kata</h1>
+<h1>Fitness Function Katas — Random Kata</h1>
 
 <style>
 ul,
@@ -35,7 +35,7 @@ ol.unstyled {
 
 
 
-<script src="kata_util.js"></script>
+<script src="ffkata_util.js"></script>
 
 <script type="text/javascript">
 /* harvest katas from Jekyll storage via Liquid */
@@ -47,8 +47,8 @@ ol.unstyled {
 
 
   document.addEventListener('DOMContentLoaded', function() {
-    writeKata(katas[Math.floor(Math.random() * katas.length)]);
-});
+    writeKata(katas[Math.floor(Math.random() * katas.length)], true);
+});	  
 
 </script>
 

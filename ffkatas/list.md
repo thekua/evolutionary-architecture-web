@@ -2,7 +2,11 @@
 layout: article
 ---
 
-<h1>Architectural Katas—Random Kata</h1>
+
+# Architectural Katas
+
+
+<script src="ffkata_util.js"></script>
 
 <style>
 ul,
@@ -33,11 +37,7 @@ ol.unstyled {
 </style>
 
 
-
-
-<script src="kata_util.js"></script>
-
-<script type="text/javascript">
+<script>
 /* harvest katas from Jekyll storage via Liquid */
    var katas = [
 {% for katas in site.data.ffkatas %}
@@ -46,11 +46,23 @@ ol.unstyled {
 ];
 
 
-  document.addEventListener('DOMContentLoaded', function() {
-    writeKata(katas[Math.floor(Math.random() * katas.length)]);
-});
+   var sortedKatas = katas.sort(function(a, b){
+      if (a.title < b.title) return -1;
+      if (a.title > b.title) return 1;
+      return 0;
+   });
+
+document.addEventListener('DOMContentLoaded', function() {
+   var kata;
+   for (i = 0; i < sortedKatas.length; i++) {
+       kata = katas[i];
+       writeKata(kata);
+   }
+});	  
 
 </script>
 
 <div id="display" />
+
+
 

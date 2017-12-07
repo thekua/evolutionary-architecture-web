@@ -1,0 +1,17 @@
+---
+title: Avoid Complex Code
+description: "PenultimateWidgets has recently hired many new graduates and interns. During code reviews and pairing, more senior developers notice a tendency towards overly complex code, including long methods and classes. They need fitness function(s) to control this."
+scope: server-side code in both Java and .NET and client-side JavaScript
+requirements:
+    - validate that methods do not become overly long
+    - validate that classes do not carry too much responsibility
+    - validate that classes have good cohesion
+context:
+    - PenultimateWidgets will pay for tools if necessary
+    - PenultimateWidgets is willing to slow down velocity to improve code quality
+solution:
+    - build cyclomatic complexity checks in the deployment pipeline for both server and client-side code
+    - find LCOM (Lack of Cohesion in Methods) tools for supported platforms (https://maisqual.squoring.com/wiki/index.php/Lack_of_Cohesion_in_Methods)
+    - Set a threshold for the RFC metric (https://maisqual.squoring.com/wiki/index.php/Response_For_a_Class) and find appropriate tools
+  
+
