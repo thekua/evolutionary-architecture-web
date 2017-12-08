@@ -1,0 +1,12 @@
+---
+title: Zero Day Security Check
+description: PenultimateWidgets management has become concerned about zero-day exploits in open source libraries and has tasked the security team with coming up with a way of ensuring that projects do not use known compromised versions.
+categories: atomic, triggered
+requirements:
+    - when the security team identifies a critical exploit, ensure that teams do not deploy anything with that version
+context:
+    - all PenultimateWidgets projects utilise a deployment pipeline
+solution:
+    - build a common fitness function into every deployment pipeline for the security team
+    - have the security fitness function check version numbers of deployed libraries
+    - if a tainted version is in use, fail the build and notify the team
