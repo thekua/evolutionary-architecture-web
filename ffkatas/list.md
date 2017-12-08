@@ -3,7 +3,7 @@ layout: article
 ---
 
 
-# Architectural Katas
+# Fitness Function Katas
 
 
 <script src="ffkata_util.js"></script>
