@@ -1,7 +1,7 @@
 ---
 title: Avoid Complex Code
 description: "PenultimateWidgets has recently hired many new graduates and interns. During code reviews and pairing, more senior developers notice a tendency towards overly complex code, including long methods and classes. They need fitness function(s) to control this."
-scope: server-side code in both Java and .NET and client-side JavaScript
+categories: atomic, triggered
 requirements:
     - validate that methods do not become overly long
     - validate that classes do not carry too much responsibility

@@ -14,7 +14,7 @@ function writeKata(kata, solution) {
 
    var displayList = document.createElement('ul');
    var item = document.createElement('li');
-   item.appendChild(document.createTextNode("Scope: " + kata.scope));
+   item.appendChild(document.createTextNode("Categories: " + kata.categories));
    displayList.appendChild(item);
    var reqs = document.createElement('li');
    reqs.appendChild(document.createTextNode("Requirements:"));

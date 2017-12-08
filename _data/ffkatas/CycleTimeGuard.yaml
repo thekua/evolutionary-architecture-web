@@ -1,0 +1,14 @@
+---
+title: Cycle Time Guard
+description: PenultimateWidgets has entered an extremely competitive market, with a startup running popular flash promotions. The marketing department has committed to keeping up with PenultimateWidgets own agressive marketing campaign, which requires development teams to be able to deliver changes to the promotion pages within an hour. Thus, they want a guarantee that changes can always take place within an hour.
+categories: atomic, triggered
+requirements:
+    - changes to marketing pages (and subpages) must take place within an hour of analyst checking copy into the CMS
+    - provide weekly trend lines for deployment times
+context:
+    - the marketing application is a monolith but it has good component separation
+solution:
+    - utilize the good modularity of the monolith to build a deployment pipeline that automatically incorporates CMS changes
+    - continuously deploy new content for marketing pages as long as they pass smoke test
+    - measure cycle time from deployment pipeline for depolyments for marketing sites
+    - save cycle time results to aggregate a weekly chart

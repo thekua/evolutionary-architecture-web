@@ -1,0 +1,13 @@
+---
+title: Elasticity of Microservices
+description: PenultimateWidgets utilizes a microservices architecture and want to ensure that as new requests appear that the architecture elastically scales.
+categories: atomic, triggered
+requirements:
+    - For microservices determined to need it, they should support elastic scale
+    - As the number of requests excedes the defined threshold, the service discovery tool creates more instances and dispatches requests
+context:
+    - PenultimateWidgets microservices use a common service template that handles discovery 
+solution:
+    - build a Hello, World service to allow instantiation of the service template
+    - deploy the service and direct enough requests to it to trigger elasticity in the naming service
+    - verify that the number of instances rose properly

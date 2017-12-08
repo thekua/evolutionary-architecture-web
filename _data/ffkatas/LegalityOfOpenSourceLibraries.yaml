@@ -1,0 +1,13 @@
+---
+title: Legility of Open Source Libraries
+description: "PenultimateWidgets lawyers became worried about the license terms of the open source libraries PenultimateWidgets used--they wanted to make sure they weren't allowing any viral licenses. They did the initial check of the licenses, but then one asked the developers: what happens if one of the frameworks changes their license?"
+categories: atomic, triggered, manual
+requirements:
+    - make sure that open source licenses do not change in undesirable ways
+context:
+    - all the libraries PenultimateWidgets uses have clear license terms within the distributions
+solution:
+    - build a reference list that hashes the characters of each license file
+    - For each build, read the license from the deployed version of the library, hash it, and compare it to the list
+    - Fail the build for any changes to the license string
+    - A developer pairs with a lawyer to verify the new license and update the hash in the reference list

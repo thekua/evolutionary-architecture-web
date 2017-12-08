@@ -1,0 +1,23 @@
+#+TITLE: Fitness Function Katas
+#+AUTHOR: Neal Ford
+#+STARTUP: showall indent
+#+OPTIONS: author:t num:nil toc:nil
+
+* elasticity of microservices
+* zero-day security check
+* auditability
+* make sure all new UX supports accessibilty
+* verify correctness of new system versus old
+* prevent view developers from instantiating models in the front end
+* support configuraility of specific parameters
+* high availability
+* high throughput
+* i18n
+* legal requirements for regulatory change
+* testing code developers cannot see
+* low latency
+* monitorability
+* debugability
+* degradability                                          :holistic:continous:
+check to see that performance decreases linearly as scale increases
+* 

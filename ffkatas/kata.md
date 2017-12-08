@@ -2,9 +2,40 @@
 layout: article
 ---
 
-<h1>Architectural Katas</h1>
+<h1>Fitness Function Katas</h1>
 
 <script src="ffkata_util.js"></script>
+
+<script src="ffkata_util.js"></script>
+
+<style>
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+li {
+  line-height: 20px;
+      list-style-type: circle;
+
+}
+
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+</style>
+
 
 <script type="text/javascript">
    var QueryString = function () {
@@ -34,7 +65,7 @@ layout: article
    var katas = [
 {% for katas in site.data.ffkatas %}
 {% assign k = katas[1] %}
-       { id: "{{ katas[0] }}", title: "{{ k.title }}", description: "{{ k.description }}", scope: "{{ k.scope }}", requirements: [{% for i in k.requirements %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}], context: [{%for i in k.context %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}], solution: [{%for i in k.solution %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}] } {% unless forloop.last %},{% endunless %}{% endfor %}
+       { id: "{{ katas[0] }}", title: "{{ k.title }}", description: "{{ k.description }}", categories: "{{ k.categories }}", requirements: [{% for i in k.requirements %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}], context: [{%for i in k.context %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}], solution: [{%for i in k.solution %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}] } {% unless forloop.last %},{% endunless %}{% endfor %}
 ];
 
 document.addEventListener('DOMContentLoaded', function() {

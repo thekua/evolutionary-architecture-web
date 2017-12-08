@@ -42,7 +42,7 @@ ol.unstyled {
    var katas = [
 {% for katas in site.data.ffkatas %}
 {% assign k = katas[1] %}
-       { id: "{{ katas[0] }}", title: "{{ k.title }}", description: "{{ k.description }}", scope: "{{ k.scope }}", requirements: [{% for i in k.requirements %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}], context: [{%for i in k.context %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}], solution: [{%for i in k.solution %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}] } {% unless forloop.last %},{% endunless %}{% endfor %}
+       { id: "{{ katas[0] }}", title: "{{ k.title }}", description: "{{ k.description }}", categories: "{{ k.categories }}", requirements: [{% for i in k.requirements %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}], context: [{%for i in k.context %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}], solution: [{%for i in k.solution %} "{{ i }}"{% unless forloop.last %},{% endunless %}{% endfor %}] } {% unless forloop.last %},{% endunless %}{% endfor %}
 ];
 
 
