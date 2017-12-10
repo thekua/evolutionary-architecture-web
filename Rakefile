@@ -6,7 +6,21 @@ HOME = "#{File.dirname(__FILE__)}"
 
 BOOK = "#{HOME}"
 BUILD_OUT = "/Users/nford/Downloads/out.html"
-ADOC_PROC = "/Users/nford/.rvm/gems/ruby-1.9.3-head/bin/asciidoctor"  
+ADOC_PROC = "/Users/nford/.rvm/gems/ruby-1.9.3-head/bin/asciidoctor"
+FFKATA_TEXT =
+<<KATA
+---
+title:
+description:
+categories:
+requirements:
+    -
+context:
+    -
+solution:
+    -
+KATA
+  
 
 # Which files should be deleted during clean or clobber tasks
 #CLEAN.include("#{DEST}/**/*.html")
@@ -65,6 +79,20 @@ task :test do
   system("bundle exec jekyll serve")
 end
 
+task :newkata do
+  puts "New fitness function kata name?"
+  print "==> "
+  name = $stdin.gets.chomp
+  kata_name = "#{HOME}/_data/ffkatas/#{name}.yaml"
+  unless name.nil?
+    File.open(kata_name, "w") {|f| f.puts FFKATA_TEXT }
+    sh("git add #{kata_name}");
+    puts "Kata created and added to version control: #{kata_name}"
+  else
+    puts "Can't create your kata for some reason"
+  end
+end
+alias_task :newkata, :nk
 
 desc "Note: not customized for this project yet"
 desc "Finds missing image files"

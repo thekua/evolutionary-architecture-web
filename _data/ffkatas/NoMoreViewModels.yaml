@@ -1,0 +1,12 @@
+---
+title: No More View Models
+description: PenultimateWidgets has a group of developers who cut their teeth on mainframe programming, where all work is done via a terminal. They have (mostly) switched to modern web development, but architects find that they often create models and workflows directly in web pages rather than support a cleaner MVC separation, and they would like to discourage this behavior.
+categories: atomic, triggered
+requirements:
+    - no model or controller code may appear in view pages
+context:
+    - developers are using Java or .NET on the server side
+solution:
+    - use PMD (https://pmd.github.io/) or Language server protocol (https://langserver.org/) to build a tool that scans which classes developers instantiate in view code
+    - build a list of restricted model and controller packages
+    - if any view code instantiates a class from the restricted list, fail the build

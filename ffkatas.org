@@ -3,11 +3,8 @@
 #+STARTUP: showall indent
 #+OPTIONS: author:t num:nil toc:nil
 
-* zero-day security check
-* auditability
 * make sure all new UX supports accessibilty
 * verify correctness of new system versus old
-* prevent view developers from instantiating models in the front end
 * support configuraility of specific parameters
 * high availability
 * high throughput
