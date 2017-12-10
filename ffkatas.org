@@ -5,7 +5,6 @@
 
 * make sure all new UX supports accessibilty
 * verify correctness of new system versus old
-* support configuraility of specific parameters
 * high availability
 * high throughput
 * i18n

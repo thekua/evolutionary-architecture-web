@@ -2,7 +2,7 @@
 layout: article
 ---
 
-<h1>Fitness Function Katas — Random Kata</h1>
+## Fitness Function Katas — Random Kata
 
 <style>
 ul,

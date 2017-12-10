@@ -80,16 +80,16 @@ task :test do
 end
 
 task :newkata do
-  puts "New fitness function kata name?"
+  puts "New fitness function kata name (no spaces)?"
   print "==> "
   name = $stdin.gets.chomp
-  kata_name = "#{HOME}/_data/ffkatas/#{name}.yaml"
-  unless name.nil?
+  unless name.nil? or name.empty?
+    kata_name = "#{HOME}/_data/ffkatas/#{name}.yaml"
     File.open(kata_name, "w") {|f| f.puts FFKATA_TEXT }
     sh("git add #{kata_name}");
     puts "Kata created and added to version control: #{kata_name}"
   else
-    puts "Can't create your kata for some reason"
+    puts "Can't create kata [#{kata_name}] for some reason"
   end
 end
 alias_task :newkata, :nk

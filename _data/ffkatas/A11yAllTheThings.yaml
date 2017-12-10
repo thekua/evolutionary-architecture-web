@@ -1,0 +1,13 @@
+---
+title: A11y All the Things
+description: PenultimateWidgets has decided that all new development of user interfaces must support accessibility, both web and desktop. Because this is a new initiative for developers, architects fear they will forget to do this and thus want safeguards.
+categories: atomic, triggered
+requirements:
+    - all new web development must support accessibility
+    - all new Java Swing development must support accessibility
+context:
+    - all UX is in either Java or webv
+solution:
+    - add a fitness function to the deployment pipeline for web projects that runs pa11y (http://pa11y.org/) to ensure compliance
+    - for Java, use PMD to check code within the user interface and look for control instantiation
+    - check to make sure every control has the AccessibleName property set

@@ -2,7 +2,7 @@
 layout: article
 ---
 
-<h1>Fitness Function Katas</h1>
+## Fitness Function Kata
 
 <script src="ffkata_util.js"></script>
 

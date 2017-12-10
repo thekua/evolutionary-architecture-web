@@ -3,7 +3,7 @@ layout: article
 ---
 
 
-# Fitness Function Katas
+## Fitness Function Katas
 
 
 <script src="ffkata_util.js"></script>

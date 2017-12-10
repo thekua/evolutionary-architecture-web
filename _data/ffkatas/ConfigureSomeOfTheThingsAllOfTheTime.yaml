@@ -1,0 +1,13 @@
+---
+title: Configure Some of the Things All of the Time
+description: PenultimateWidgets has been burned in the past by having hard-coded constants in several places in their code base, governing both business cases (thresholds, maximums, etc.) and operational concerns. Architects need a way to prevent developers from accidentally hard-coding critical values.
+categories: atomic, triggered
+requirements:
+    - architects define a list of dynamic values that should always pulled from a configuration file, not hard coded.
+context:
+    - all the teams use deployment pipelines and a declarative language to provision infrastructure
+solution:
+    - Upon check-in, scan the list of dynamic values in the code base and see if any of them are assigned to (or their setter is called) or a new instance is instantiated via a constructor that provides values
+    - Ensure that all assignments for dynamic values are assigned via the API that handles configuration, not with hard-coded values
+    - Also upon check-in, scan the definitions of infrastructure to look for dynamic values and ensure they are assigned properly before building the environment
+    - scan the configuration file and ensure that all defined dynamic values are present and have values
