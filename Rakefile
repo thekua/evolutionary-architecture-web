@@ -7,19 +7,12 @@ HOME = "#{File.dirname(__FILE__)}"
 BOOK = "#{HOME}"
 BUILD_OUT = "/Users/nford/Downloads/out.html"
 ADOC_PROC = "/Users/nford/.rvm/gems/ruby-1.9.3-head/bin/asciidoctor"
-FFKATA_TEXT =
-<<KATA
----
-title:
-description:
-categories:
-requirements:
-    -
-context:
-    -
-solution:
-    -
-KATA
+
+class String
+  def titleize
+    split(/(\W)/).map(&:capitalize).join
+  end
+end
   
 
 # Which files should be deleted during clean or clobber tasks
@@ -80,16 +73,30 @@ task :test do
 end
 
 task :newkata do
-  puts "New fitness function kata name (no spaces)?"
+  puts "New fitness function kata title (with spaces)?"
   print "==> "
-  name = $stdin.gets.chomp
-  unless name.nil? or name.empty?
-    kata_name = "#{HOME}/_data/ffkatas/#{name}.yaml"
+  kata_title = $stdin.gets.chomp
+FFKATA_TEXT =
+<<KATA
+---
+title: #{kata_title}
+description:
+categories:
+requirements:
+    -
+context:
+    -
+solution:
+    -
+KATA
+  
+  unless kata_title.nil? or kata_title.empty?
+    kata_name = "#{HOME}/_data/ffkatas/#{kata_title.titleize.gsub(' ', '')}.yaml"
     File.open(kata_name, "w") {|f| f.puts FFKATA_TEXT }
     sh("git add #{kata_name}");
     puts "Kata created and added to version control: #{kata_name}"
   else
-    puts "Can't create kata [#{kata_name}] for some reason"
+    puts "Can't create [#{kata_name}] for some reason"
   end
 end
 alias_task :newkata, :nk

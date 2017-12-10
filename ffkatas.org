@@ -11,8 +11,6 @@
 * legal requirements for regulatory change
 * testing code developers cannot see
 * low latency
-* monitorability
-* debugability
 * degradability                                          :holistic:continous:
 check to see that performance decreases linearly as scale increases
 * 

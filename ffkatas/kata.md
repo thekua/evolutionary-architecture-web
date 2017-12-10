@@ -69,7 +69,7 @@ ol.unstyled {
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
-   var includeSolution =  QueryString.solution == '1' || QueryString.solution == 'true'
+   var includeSolution =  QueryString.solution == '1' || QueryString.solution == 'true' || QueryString.s == '1'
    for (i = 0; i < katas.length; i++) 
       if ( katas[i].id == QueryString.id) 
       	  writeKata(katas[i], includeSolution);

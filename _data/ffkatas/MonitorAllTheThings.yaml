@@ -1,0 +1,12 @@
+---
+title: Monitor All The Things
+description: PenultimateWidgets wants to ensure that Java and .NET applications support monitoring.
+categories: atomic, continuous
+requirements:
+    - All Java applications in all environments must support monitoring by the chosen tool
+context:
+    - all projects run a deployment pipeline
+    - the deployment pipeline uses automated machine provisioning for all environments
+solution:
+    - create a test during the pre-flight building of the machine image to ensure monitoring ports are listening properly
+    - fail the build if any development team skipped or mis-configured monitoring

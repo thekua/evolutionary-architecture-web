@@ -1,0 +1,13 @@
+---
+title: Debug All the Things
+description: PenultimateWidgets wants to ensure that both Java and Javascript applications support remote debugging in the development environment to aid in faster customer support resolution.
+categories: atomic, continuous
+requirements:
+    - All Java applications deployed in the development and QA environments must have remote debugging enabled
+    - Javascript deployed in the development and QA environments should not be obfuscated in any way
+context:
+    - all projects run a deployment pipeline
+solution:
+    - for Java applications, create a monitor that runs in development and QA that checks to ensure the remote debugging ports are available and listening for all deployed Java applications
+    - create a symetrical monitor for production systems to ensure the remote deugging ports are NOT enabled in production
+    - For Javascript, create a special flag variable declaration at the top of the file that is not used anywhere else (meaning the minimizer will remove it). For development and QA environments, check to make sure the special flag variable is present
