@@ -2,10 +2,6 @@
 layout: article
 ---
 
-
-## Fitness Function Katas
-
-
 <script src="ffkata_util.js"></script>
 
 <style>
