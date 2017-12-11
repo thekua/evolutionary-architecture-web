@@ -3,7 +3,6 @@
 #+STARTUP: showall indent
 #+OPTIONS: author:t num:nil toc:nil
 
-* make sure all new UX supports accessibilty
 * verify correctness of new system versus old
 * high availability
 * high throughput
