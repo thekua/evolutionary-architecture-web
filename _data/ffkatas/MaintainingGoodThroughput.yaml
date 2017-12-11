@@ -1,0 +1,11 @@
+---
+title: Maintaining Good Throughput
+description: "PenultimateWidgets is proud of how popular their website has become and want to make sure they maintain good throughput: a combination of performance and scalability."
+categories: holistic, continuous
+requirements:
+    - the enterprise architects have defined thresholds for acceptable performance degradation under scale, and the architecture should maintain performance and scale within those parameters
+context:
+    - the architecture support good incremental change and modern DevOps practices
+solution:
+    - build a run-time monitor that reports on number of instances, performance per instance and overall
+    - if performance or scalability violates the established thresholds, raise an alarm
