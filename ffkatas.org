@@ -4,7 +4,6 @@
 #+OPTIONS: author:t num:nil toc:nil
 
 * high availability
-* high throughput
 * i18n
 * legal requirements for regulatory change
 * testing code developers cannot see
