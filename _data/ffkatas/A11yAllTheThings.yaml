@@ -6,7 +6,7 @@ requirements:
     - all new web development must support accessibility
     - all new Java Swing development must support accessibility
 context:
-    - all UX is in either Java or webv
+    - all UX is in either Java Swing or Javascript
 solution:
     - add a fitness function to the deployment pipeline for web projects that runs pa11y (http://pa11y.org/) to ensure compliance
     - for Java, use PMD to check code within the user interface and look for control instantiation
