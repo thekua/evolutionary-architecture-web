@@ -73,7 +73,7 @@ task :test do
 end
 
 task :newkata do
-  puts "New fitness function kata title (with spaces)?"
+  puts "New fitness function kata title? (with spaces)"
   print "==> "
   kata_title = $stdin.gets.chomp
 FFKATA_TEXT =
@@ -96,7 +96,7 @@ KATA
     sh("git add #{kata_name}");
     puts "Kata created and added to version control: #{kata_name}"
   else
-    puts "Can't create [#{kata_name}] for some reason"
+    puts "!!!! Can't create [#{kata_name}] for some reason"
   end
 end
 alias_task :newkata, :nk
