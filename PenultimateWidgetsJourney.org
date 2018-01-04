@@ -1,0 +1,130 @@
+#+TITLE: PenultimateWidgets Journey
+#+AUTHOR: Neal Ford
+#+STARTUP: showall indent
+#+OPTIONS: author:t num:nil toc:nil
+
+* topics
+** Introduction to PenultimateWidgets
+Told as a company-wide meeting
+- explains where the name came from
+- now the name has become prophetic
+- ends with brainstorming on what to do
+** Attack plan
+- Migrate some critical systems
+- build microservices for new stuff
+** the spreadsheet & reselling as a platform
+** building a demonstration defeats discussion POC
+- include database migrations, machine provisioning
+- including deployment pipeline (from book)
+- automation FTW
+** adding fitness function for cycles
+** splitting operations into container substrate w/ containers on teams
+** chasing complexity
+- tries a dumb solution on the backend--foiled by fitness functions
+- tried the same solution on the front end--foiled by fitness function
+- introduce pairing as a teaching tool
+** inverse conway maneuver after switching teams to microservices
+** Goldilocks governance
+** adding fitness function to invoicing service
+** swapping star rating
+** reuse at PenultimateWidgets
+** reporting & eventual consistency
+** Legality of open source libraries
+** EA at PenultimateWidgets
+** selective scale because of microservices isolation
+** what to port? 
+** evolving routing
+** breaking the monolith
+** tech lead journey
+** Anemic BAs
+** DBA journey
+** crisis!
+** QA journey
+** zero-day security fitness functions
+** merger with another company
+- incorporating alien artifacts
+- legacy in a box
+- selective use of ESB
+** deployment pipeline as a governace vector
+** broadcasting governance using tech radar
+** structural replacement via Scientist
+** selling the platform
+- include selling platform w/ deployment pipeline & fitness functions in place
+** open ultimate widgets
+a sudden market shift allows then to pivot to SmartWidgets and use open source as a leverage
+* outline
+** 01. In which a call to action is made
+*** first day for intern 
+* character names
+** Addison
+** Ashley
+** Ashton
+** Avery
+** Avery
+** Bailey
+** Cameron
+** Carson
+** Carter
+** Casey
+** Corey
+** Dakota
+** Devin
+** Drew
+** Emerson
+** Frankie
+** Harley
+** Harper
+** Hayden
+** Hunter
+** Jackie
+** Jaiden
+** Jaime
+** Jamie
+** Jaylen
+** Jesse
+Intern, first day of work
+** Jody
+** Jordan
+** Justice
+** Justice
+** Kai
+** Kelly
+** Kelsey
+** Kendall
+** Kennedy
+** Kerry
+** Lane
+** Logan
+** Mackenzie
+** Madison
+** Marley
+** Mason
+** Morgan
+** Parker
+** Pat
+** Payton
+** Penn
+CEO/founder
+** Piper
+** Quinn
+** Reagan
+** Reese
+** Riley
+** Robbie
+** Rowan
+Jesse's boss, head of application development
+love concert t-shirts
+
+** Ryan
+** Shane
+** Shawn
+** Skyler
+** Sydney
+** Taylor
+** Tristan
+
+
+
+
+
+
