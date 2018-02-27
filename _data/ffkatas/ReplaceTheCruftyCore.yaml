@@ -1,0 +1,13 @@
+---
+title: Replace the Crufty Core
+description: PenultimateWidgets built a network scanning tool many, many years ago to look for suspicious activity at the network packet level. To achieve the proper performance, the code was written and has been maintained in increasingly complex C code. PenultimateWidgets needs to replace the code but is nervous about introducing bugs and/or harming performance or throughput.
+categories: atomic, continuous
+requirements:
+    - The preference is to replace C altogether with a more modern language such as Java or Go.
+    - The new solution must replicate the behavior of the old rules, and allow new rules to be written in the improved language.
+context:
+    - C was chosen 10 years ago because it was the only choice that could possibly deliver the required performance.
+solution:
+    - Built fitness functions around the existing C code to ensure performance and throughput values.
+    - Build a spike solution in both Java and Go (and perhaps others) and run them against the fitness functions to see if they can meet the threshold
+    - Use Scientist (https://github.com/github/scientist) port Scientist4J (https://github.com/rawls238/Scientist4J) to verify the new code against the old code in production
