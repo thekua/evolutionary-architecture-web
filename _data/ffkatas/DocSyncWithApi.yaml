@@ -1,0 +1,14 @@
+---
+title: Doc Sync With API
+description: PenultimateWidgets publishes an API for external vendors to check on order status, availability, and other B2B perqs. However, the external partners rely on the documentation of the API, which sometimes becomes outdated when developers add new functionality. The PenultimateWidgets architects want to ensure that documentation is always up to date, especially method signatures and data formats.
+categories: atomic, triggered
+requirements:
+    - Documentation must match current code. 
+context:
+    - Documentation is generated from code, so method signatures should be up to date. However, developers must make sure that descriptions for each method parameter has proper documentation.
+    - Ensure that the version posted on the public website matches the current released version.    
+solution:
+    - Parse the code to look for public method signatures
+    - 'Parse the documentation looking for <code> tags, which surround method signatures and parameters'
+    - Ensure that each tagged element includes a description
+    - Add a Publication Date value to the public website; after new deployments, check to make sure the deployment time matches the Publication date
