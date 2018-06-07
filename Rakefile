@@ -32,6 +32,7 @@ end
 
 task :default => [:status]
 
+desc "perform the pull, commit, push ritual"
 task :commit_push => [:pull] do
   puts "Commit comment? (default will be 'updates on #{Time.now}')"
   print " => "
@@ -48,17 +49,20 @@ end
 alias_task :commit_push, :cp
 alias_task :commit_push, :copu
 
+desc "pull from repo"
 task :pull do
   sh("git pull")
 end
 alias_task :pull, :ll
 alias_task :pull, :up
 
+desc "git status"
 task :status => [:pull] do
   sh("git status")
 end
 alias_task :status, :st
 
+desc "publish to web"
 task :publish => [:pull] do
   sh "git checkout gh-pages"
   sh "git rebase master"
@@ -67,11 +71,13 @@ task :publish => [:pull] do
 end
 alias_task :publish, :pub
 
+desc "test web site (good for checking YAML parse errors in katas)"
 task :test do
   system("echo http://0.0.0.0:4000/ | pbcopy")
   system("bundle exec jekyll serve")
 end
 
+desc "generate template for new fitness function kata"
 task :newkata do
   puts "New fitness function kata title? (with spaces)"
   print "==> "
@@ -102,11 +108,11 @@ end
 alias_task :newkata, :nk
 
 desc "Note: not customized for this project yet"
-desc "Finds missing image files"
 desc "Prints in the format:"
 desc "file_name:"
 desc "\t missing_image"
 desc "asciidoc format for images: image::images/fig_service_choreography.jpg[]"
+desc "Finds missing image files"
 task :missing => [] do
   regex_for_asciidoc_images = /^image\:\:images\/(.*)\[\]/
   image_filenames = (FileList["#{HOME}/images/*.png"] +
