@@ -1,0 +1,12 @@
+---
+title: Depend on Dependencies
+description: "PenultimateWidgets has recently been burned by a Maven update that broke several applications yet wasn't detected until production. Architects and business people want to make sure this doesn't happen again."
+categories: atomic, triggered, manual
+requirements: 
+    - "Make sure that no dependency updates break functionality past the developers' staging environment."
+context:
+    - All affected projects use Java, Ruby, and Javascript.
+solution:
+    - Use a deployment pipeline to trigger new builds and test suite execution any time any artifact of the project changes, including external dependencies. If the automatic build breaks, a developer must locate the problem and restore automacity.
+    - OR
+    - "Use Dependabot (https://dependabot.com/)"
