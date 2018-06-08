@@ -1,0 +1,10 @@
+---
+title: Deploy All The Things
+description: PenultimateWidgets has gotten tired of each application requiring an elaborate environment setup to deploy and run, and has decided that all new applications must be deployed within Docker containers. The PenultimateWidgets architects want to ensure that all applications follow the same standard deployment guidelines.
+categories: atomic, continuous
+requirements:
+    - Each application deployment must occur within a Docker container
+context:
+    - All the applications are containerizable, some with great effort.
+solution:
+    - "Build a monitor that runs within the developers' staging area that inspects each running service to ensure that it is running within a container and supports common operational concerns such as logging, monitoring, and service discovery."
