@@ -1,0 +1,10 @@
+---
+title: Install All The Things
+description: PenultimateWidgets distributes a desktop application to select clients that facilitates coordination between business partners. The application is written in C#, using .NET desktop libraries. In the past, PenultimateWidgets has exhibited problems with the installer not working correctly for some edge cases, and they want to ensure that their clients have a good installation experience.
+categories: atomic, triggered
+requirements:
+    - Make sure that the desktop installation installs correctly each time developers make a change in the code base.
+solution:
+    - As part of the deployment pipeline, provision a pristine Windows environment for each supported version
+    - Install the new build and run the installation routine
+    - Smoke test select parts of the application to ensure that all components installed correctly.
