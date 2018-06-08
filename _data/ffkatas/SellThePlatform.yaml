@@ -1,0 +1,11 @@
+---
+title: Sell The Platform
+description: "PenultimateWidgets is in the process of rebuilding their core platform, incorporating some key features that will appeal to others in a similar problem space. PenultimateWidgets plans to sell their platform to other companies, but worry that the differentiating factors (such as performance, scale, and elasticity) will suffer as clients start making changes to the platform, ultimately harming PenultimateWidgets platform's reputation. How can they sell their platform and still ensure that the critically important characteristics remain unchanged?" 
+categories: triggered, holistic 
+requirements:
+    - PenultimateWidgets must ensure that clients meet the same system level agreements over a variety of architectural characteristics.
+context:
+    - PenultimateWidgets has a rich set of fitness functions and a well constructed deployment pipeline.
+solution:
+    - "PenultimateWidgets sells not only the platform but the running deployment pipeline for the platform as well. PenultimateWidgets engineers make sure that all the fitness functions run in the new client's environment."
+    - PenultimateWidgets will continue to certify the platform as long as all their fitness functions continue to execute successfully.
