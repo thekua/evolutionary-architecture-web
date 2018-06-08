@@ -1,0 +1,12 @@
+---
+title: Upgrade All The Things
+description: PenultimateWidgets has a bad habit of waiting too long to update core libraries and frameworks they depend upon for development. Waiting past several versions makes the eventual upgrade quite painful, and they have resolved to perform upgrades in a more timely manner.
+categories: atomic, temporal
+requirements:
+    - When a new major version of a library or framework appears, make sure PenultimateWidgets has upgrades within 3 months.
+context:
+    - PenultimateWidgets uses a deployment pipeline for all projects.
+solution:
+    - Use Dependabot to flag new major versions of frameworks and libraries.
+    - When a library updates, make an entry in a build database and start a 3-month clock.
+    - "If the library or framework in question hasn't been updated in 3 months, fail the build."
