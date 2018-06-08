@@ -1,0 +1,10 @@
+---
+title: Discover All The Things
+description: "PenultimateWidgets publishes an API for third-party, business-to-business integrations. To make it easier for clients to consume their services, they have instituted a convention that every endpoint delivers a documentation string when called with the additional parameter '&docs=true'. PenultimateWidgets architects want to ensure that all published endpoints include this documentation string."
+categories: atomic, continuous
+requirements:
+    - Every published external endpoint must include appropriate documentation strings when invoked.
+context:
+    - Not all projects at PenultimateWidgets are running a deployment pipeline yet.
+solution:
+    - Developers build a continuous monitor that calls each method in the published API at random from a dictionary, checking that each endpoint documentation invocation delivers an HTML page and not an HTML 404.
