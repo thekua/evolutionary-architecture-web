@@ -1,0 +1,11 @@
+---
+title: Break On Upgrade
+description: PenultimateWidgets builds a number of applications in Ruby on Rails, which has an active release schedule. Occasionally, developers really want a feature that appears in version X+1, where PenultimateWidgets is currently on version X. To acquire the desired functionality, developers back-port the new features from X + 1 into X. However, when PenultimateWidgets finally does upgrade to X + 1, the back ported features are almost certain to break because of incompatibilities.
+categories: atomic, triggered, temporal
+requirements:
+    - Make sure that all back-ported features do not survive the upgrade to the next version.
+context:
+    - PenultimateWidgets Ruby on Rails applications all have excellent test suites and deployment pipelines.
+solution:
+    - Add a unit test to the code base that checks the version number of the framework. If the framework version it higher than the expected one, fail the build with a warning that back-ported features will likely not work.
+    - Catalog all the back-ported features in the unit test to make it easy to identify them when it becomes time to replace them.
