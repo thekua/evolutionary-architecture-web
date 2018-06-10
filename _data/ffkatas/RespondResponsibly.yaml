@@ -1,0 +1,14 @@
+---
+title: Respond Responsibly
+description: "PenultimateWidgets business analysts are worried about one of their key competitors, who has a very fast website. PenultimateWidgets website has traditionally not featured speed; they want to ensure that the responsiveness doesn't get worse."
+categories: holistic, triggered
+requirements:
+    - Establish a responsiveness service-level agreement for each major page
+    - Ensure that no page drops below their threshold
+context:
+    - All PenultimateWidgets websites are structured well enough to allow some degree of automated testing.
+solution:
+    - Spin up a build in an integration environment with representative data
+    - Use an automated testing tool (such as Selenium or Watir) to automate visiting the pages with an SLA
+    - Time the rendering of the page (using a tool such as Watchtower)
+    - Fail the build if the response time exceeds the threshold
