@@ -3,6 +3,8 @@
 #+STARTUP: showall indent
 #+OPTIONS: author:t num:nil toc:nil
 
+* themes
+** Let's experiment!
 * topics
 ** Introduction to PenultimateWidgets
 Told as a company-wide meeting
@@ -12,42 +14,52 @@ Told as a company-wide meeting
 ** Attack plan
 - Migrate some critical systems
 - build microservices for new stuff
-** the spreadsheet & reselling as a platform
+- finding seams
+- improving the modularity of what's already there
+** the spreadsheet
+*** aspirational goals in a spreadsheet
 ** building a demonstration defeats discussion POC
 - include database migrations, machine provisioning
 - including deployment pipeline (from book)
 - automation FTW
 ** adding fitness function for cycles
+*** They decide that time to market is important
+*** spawns a discussion of process fitness function vs. tests
 ** splitting operations into container substrate w/ containers on teams
+*** team autonomy
+*** service meshes
+** what to port? 
+*** can't decide what to port from the old Swing application
+*** experiment
 ** chasing complexity
 - tries a dumb solution on the backend--foiled by fitness functions
 - tried the same solution on the front end--foiled by fitness function
 - introduce pairing as a teaching tool
 ** inverse conway maneuver after switching teams to microservices
-** Goldilocks governance
-** adding fitness function to invoicing service
+describes an experiment in messaging overhead
+** Anemic BA problem
 ** swapping star rating
-** reuse at PenultimateWidgets
+*** a success story using Scientist of incremental change
+*** encourages experimentation by Ashley on smart widgets
 ** reporting & eventual consistency
+*** talking business people out of transactions
+*** realizing that separation of concerns simplifies everything
 ** Legality of open source libraries
-** EA at PenultimateWidgets
-** selective scale because of microservices isolation
-** what to port? 
-** evolving routing
-** breaking the monolith
-** tech lead journey
-** Anemic BAs
+** Goldilocks governance
+*** selective scale because of microservices isolation
 ** DBA journey
+** reuse at PenultimateWidgets
 ** crisis!
+** tech lead journey
 ** QA journey
+** EA at PenultimateWidgets
+*** deployment pipeline as a governance vector
+*** broadcasting governance using tech radar
 ** zero-day security fitness functions
 ** merger with another company
 - incorporating alien artifacts
 - legacy in a box
 - selective use of ESB
-** deployment pipeline as a governace vector
-** broadcasting governance using tech radar
-** structural replacement via Scientist
 ** selling the platform
 - include selling platform w/ deployment pipeline & fitness functions in place
 ** open ultimate widgets
@@ -58,6 +70,7 @@ a sudden market shift allows then to pivot to SmartWidgets and use open source a
 * character names
 ** Addison
 ** Ashley
+Experiment-happy architect
 ** Ashton
 ** Avery
 ** Avery

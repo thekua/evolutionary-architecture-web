@@ -1,0 +1,11 @@
+---
+title: Deterministic Distributability
+description: "PenultimateWidgets has been burned in the past by hard-coded strings in applications that tie applications to a particular data center location. They want to ensure this doesn't happen in the future."
+categories: atomic, triggered
+requirements:
+    - Ensure that no data center location is embedded within an application
+context:
+    - PenultimateWidgets uses several different data centers, distributed geographically.
+solution:
+    - Require that developers use configuration files for all database configuration (using tools like ArchUnit)
+    - During testing, randomly switch database configurations between tests across several working instances
