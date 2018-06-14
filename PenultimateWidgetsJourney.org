@@ -5,8 +5,9 @@
 
 * themes
 ** Let's experiment!
-* topics
-** Introduction to PenultimateWidgets
+* outline
+** 01. In which a call to action is made
+*** first day for intern 
 Told as a company-wide meeting
 - explains where the name came from
 - now the name has become prophetic
@@ -18,6 +19,8 @@ Told as a company-wide meeting
 - improving the modularity of what's already there
 ** the spreadsheet
 *** aspirational goals in a spreadsheet
+*** discover the Building Evolutionary Architectures book
+*** fitness functions over spreadsheets
 ** building a demonstration defeats discussion POC
 - include database migrations, machine provisioning
 - including deployment pipeline (from book)
@@ -64,9 +67,32 @@ describes an experiment in messaging overhead
 - include selling platform w/ deployment pipeline & fitness functions in place
 ** open ultimate widgets
 a sudden market shift allows then to pivot to SmartWidgets and use open source as a leverage
-* outline
-** 01. In which a call to action is made
-*** first day for intern 
+* fitness functions
+** CycleTimeGuard   
+** DeployAllTheThings   
+** DiscoverAllTheThings   
+** InstallAllTheThings   
+** A11yAllTheThings
+** AuditTheAccounting 
+** ConfigureSomeOfTheThingsAllOfTheTime 
+** DebugAllTheThings   
+** DependOnDependencies   
+** DeterministicDistributability   
+** DocSyncWithApi   
+** LegalityOfOpenSourceLibraries   
+** NoMoreViewModels   
+** MonitorAllTheThings   
+** RespondResponsibly   
+** SellThePlatform   
+** UpgradeAllTheThings   
+** BreakOnUpgrade   
+** DegradeGracefully   
+** ElasticityOfMS   
+** MaintainingGoodThroughput   
+** MakeSureNewReallyReplacesOld   
+** ReplaceTheCruftyCore 
+** DeterministicDistributability
+** RespondResponsibly
 * character names
 ** Addison
 ** Ashley
