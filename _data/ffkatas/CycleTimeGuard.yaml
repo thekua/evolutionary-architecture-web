@@ -1,6 +1,6 @@
 ---
 title: Cycle Time Guard
-description: PenultimateWidgets has entered an extremely competitive market, with a startup running popular flash promotions. The marketing department has committed to keeping up with PenultimateWidgets own agressive marketing campaign, which requires development teams to be able to deliver changes to the promotion pages within an hour. Thus, they want a guarantee that changes can always take place within an hour.
+description: PenultimateWidgets has entered an extremely competitive market, with a startup running popular flash promotions. The marketing department has committed to keeping up with PenultimateWidgets own aggressive marketing campaign, which requires development teams to be able to deliver changes to the promotion pages within an hour. Thus, they want a guarantee that changes can always take place within an hour.
 categories: atomic, triggered
 requirements:
     - changes to marketing pages (and subpages) must take place within an hour of analyst checking copy into the CMS
