@@ -1,6 +1,6 @@
 ---
 title: Audit the Accounting
-description: PenultimateWidgets has been a Bad Company (cheating on some complex accouting rules), but they have reformed their ways and paid their penalities. Now, however, as part of the settlement, they agree to put auditing measures in place around code that handles accounting rules. State auditors come once a quarter to look everything over, but PenultimateWidgets has found it too much of a chore to delay preparation until near audit time; they want a more automated way to verify things.
+description: PenultimateWidgets has been a Bad Company (cheating on some complex accounting rules), but they have reformed their ways and paid their penalties. Now, however, as part of the settlement, they agree to put auditing measures in place around code that handles accounting rules. State auditors come once a quarter to look everything over, but PenultimateWidgets has found it too much of a chore to delay preparation until near audit time; they want a more automated way to verify things.
 categories: atomic, triggered and manual
 requirements:
     - all code that affects accounting must be limited to a certain set of packages/namespaces

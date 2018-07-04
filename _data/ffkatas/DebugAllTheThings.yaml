@@ -9,6 +9,6 @@ context:
     - all projects run a deployment pipeline
 solution:
     - for Java applications, create a monitor that runs in development and QA that checks to ensure the remote debugging ports are available and listening for all deployed Java applications
-    - create a symetrical monitor for production systems to ensure the remote deugging ports are NOT enabled in production
+    - create a symmetrical monitor for production systems to ensure the remote debugging ports are NOT enabled in production
     - For Javascript, create a special flag variable declaration at the top of the file that is not used anywhere else (meaning the minimizer will remove it). For development and QA environments, check to make sure the special flag variable is present
     - include source maps for obfuscated code to map problems back to the source
