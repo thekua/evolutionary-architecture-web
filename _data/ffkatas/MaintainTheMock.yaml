@@ -1,0 +1,10 @@
+---
+title: Maintain the Mock
+description: "PenultimateWidgets has started experimenting with flashing the chips on their 'smart' widgets during the manufacturing process, allowing them to make changes in hardware-based code more easily and quickly. However, they must make sure that the mock version of the hardware API the developers use is always up to date with the real API."
+categories: atomic, triggered
+requirements:
+    - Ensure that the mock API always matches method names, parameters, and types
+context:
+    - A mock testing framework exists that replicates the hardware API, but it must be maintained by the hardware team.
+solution:
+    - Build a fitness function that matches the mock API method signatures, parameters, and types to the real API on the hardware; fail the build if the team has allowed it to get out of sync.
