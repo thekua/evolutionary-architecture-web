@@ -1,0 +1,13 @@
+---
+title: Dire Deltas
+description: PenultimateWidgets developers have developed a bad habit of keeping files checked out for days or weeks at a time, preventing continuous integration. As part of their attempt to improve engineering practices overall, the enterprise architects at PenultimateWidgets encourage frequent check-ins with corresponding good test coverage.
+categories: atomic, process
+requirements:
+    - All check-ins must contain less than 1000 lines of code
+    - The ratio of test code to source code should be at least 0.75:1
+context:
+    - All projects now use a continuous integration server
+    - All projects use the same directory structure, with well partitioned tests
+solution:
+    - Create a fitness function that counts the number of lines in the check-in delta and fails if it exceeds the threshold
+    - Create a fitness function that counts the number of lines in delta from the test packages and the source packages and compute the ratio; fail if developers exceed the defined ratio
