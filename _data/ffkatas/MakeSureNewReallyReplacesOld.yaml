@@ -8,6 +8,6 @@ context:
     - the legacy accounting system has a few spotty unit tests but no good coverage and no other testing. The unit test that exist are pootly maintained and unreliable.
 solution:
     - For each discrete function covered under this rule, create a functional test that treats each system (old and new) as a black box, looking only at the results of each. 
-    - Provision the old system (perhaps using the Legacy in the Box pattern) and new in an integratino testing environment and run the functional replacement tests.
+    - Provision the old system (perhaps using the Legacy in the Box pattern) and new in an integration testing environment and run the functional replacement tests.
     - Stories are not marked complete until the functional tests run.
 
