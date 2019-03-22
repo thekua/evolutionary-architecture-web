@@ -63,7 +63,7 @@ end
 alias_task :status, :st
 
 desc "publish to web"
-task :publish => [:pull] do
+task :publish => [] do
   sh "git checkout gh-pages"
   sh "git rebase master"
   sh "git push origin gh-pages"
