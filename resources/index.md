@@ -7,6 +7,17 @@ We discuss many resources in the _Building Evolutionary Architectures_ workshops
 
 ---- 
 
+### Presentations _NOT_ by the Authors
+
+* [Evolutionary UI: Change as a first-class citizen in the modern frontend world](https://www.youtube.com/watch?v=5915WUFazjo)    
+by Rufus Raghunath and Giamir Buoncristiani
+
+Allowing for change is especially important when designing your frontend applications, where ever higher user expectations meet the fast-paced JavaScript ecosystem.
+
+In this talk, we will show how the principles of evolutionary architecture can be applied to UI to prioritize changeability. We’ll consider several approaches to making a modern UI application more evolvable, such as the microfrontends pattern, and examine specific “fitness functions” that will keep you and your team honest to your requirements without sacrificing evolvability. We’ll also discuss the tradeoffs you make when you choose a more evolutionary frontend architecture, and provide a framework for thinking about how much future change you’ll need to account for.
+
+### Software
+
 * [ArchUnit](https://www.archunit.org/)    
 ArchUnit is a free, simple and extensible library for checking the architecture of your Java code using any plain Java unit test framework. 
 

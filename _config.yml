@@ -3,5 +3,5 @@ description: Website for the book Evolutionary Architecture
 exclude: [_data, lib/, rakefile]
 paginate: 10
 baseurl: ''
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate_path: "page:num"
