@@ -16,6 +16,9 @@ Allowing for change is especially important when designing your frontend applica
 
 In this talk, we will show how the principles of evolutionary architecture can be applied to UI to prioritize changeability. We’ll consider several approaches to making a modern UI application more evolvable, such as the microfrontends pattern, and examine specific “fitness functions” that will keep you and your team honest to your requirements without sacrificing evolvability. We’ll also discuss the tradeoffs you make when you choose a more evolutionary frontend architecture, and provide a framework for thinking about how much future change you’ll need to account for.
 
+* [Evolutionary UI: Change as a first-class citizen in the modern frontend world from O'Reilly SACON 2019](https://www.youtube.com/watch?v=QNRv-KyhVK0)    
+by By Rufus Raghunath & Giamir Buoncristiani
+
 ### Software
 
 * [ArchUnit](https://www.archunit.org/)    
