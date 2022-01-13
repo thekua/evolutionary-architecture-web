@@ -1,13 +1,31 @@
 ---
 layout: article
 ---
-## Resources
+# Resources
 
 We discuss many resources in the _Building Evolutionary Architectures_ workshops, and we continue to find more tools that fall into our categorization of fitness functions. 
 
 ---- 
 
-### Presentations _NOT_ by the Authors
+## Presentations by the Authors ###
+
+* [Pat presenting at GOTO conference, 2017](https://www.youtube.com/watch?v=8bEsNT7jdC4)
+![Pat presenting at GOTO conference]({{ site.url }}/images/2017-Pat-GOTO.png)
+
+----
+
+* [Rebecca presenting at XConf EU, 2018](https://www.youtube.com/watch?v=UV_B-ioocpY)
+![Rebecca presenting at XConf EU]({{ site.url }}/images/2018-Rebecca-XConf-EU.png)
+
+
+---- 
+
+* [Neal presenting at YOW! conference, 2018](https://www.youtube.com/watch?v=-Z_Va9iWo0I)
+![Neal presenting at YOW! conference, 2018]({{ site.url }}/images/2018-Neal-BEA_at_YOW.png)
+
+
+
+## Presentations _NOT_ by the Authors
 
 * [Evolutionary UI: Change as a first-class citizen in the modern frontend world](https://www.youtube.com/watch?v=5915WUFazjo)    
 by Rufus Raghunath and Giamir Buoncristiani
@@ -19,7 +37,7 @@ In this talk, we will show how the principles of evolutionary architecture can b
 * [Evolutionary UI: Change as a first-class citizen in the modern frontend world from O'Reilly SACON 2019](https://www.youtube.com/watch?v=QNRv-KyhVK0)    
 by By Rufus Raghunath & Giamir Buoncristiani
 
-### Software
+## Software
 
 * [ArchUnit](https://www.archunit.org/)    
 ArchUnit is a free, simple and extensible library for checking the architecture of your Java code using any plain Java unit test framework. 

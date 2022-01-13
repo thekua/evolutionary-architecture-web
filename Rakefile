@@ -42,7 +42,6 @@ task :commit_push => [:pull] do
   else
     "#{comment}"
   end
-  sh "gitwc >> writing.log"
   sh "git commit -a -m'#{commit_message}'"
   sh "git push"
 end
