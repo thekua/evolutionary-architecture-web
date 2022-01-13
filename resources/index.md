@@ -9,21 +9,22 @@ We discuss many resources in the _Building Evolutionary Architectures_ workshops
 
 ## Presentations by the Authors ###
 
-* [Pat presenting at GOTO conference, 2017](https://www.youtube.com/watch?v=8bEsNT7jdC4)
 ![Pat presenting at GOTO conference]({{ site.url }}/images/2017-Pat-GOTO.png)
+### [Pat presenting at GOTO conference, 2017](https://www.youtube.com/watch?v=8bEsNT7jdC4)
 
 ----
 
-* [Rebecca presenting at XConf EU, 2018](https://www.youtube.com/watch?v=UV_B-ioocpY)
 ![Rebecca presenting at XConf EU]({{ site.url }}/images/2018-Rebecca-XConf-EU.png)
+### [Rebecca presenting at XConf EU, 2018](https://www.youtube.com/watch?v=UV_B-ioocpY)
 
 
 ---- 
 
-* [Neal presenting at YOW! conference, 2018](https://www.youtube.com/watch?v=-Z_Va9iWo0I)
 ![Neal presenting at YOW! conference, 2018]({{ site.url }}/images/2018-Neal-BEA_at_YOW.png)
+### [Neal presenting at YOW! conference, 2018](https://www.youtube.com/watch?v=-Z_Va9iWo0I)
 
 
+---- 
 
 ## Presentations _NOT_ by the Authors
 
