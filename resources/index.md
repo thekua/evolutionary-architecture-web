@@ -17,8 +17,12 @@ We discuss many resources in the _Building Evolutionary Architectures_ workshops
 * [Rebecca presenting at XConf EU, 2018](https://www.youtube.com/watch?v=UV_B-ioocpY)
 ![Rebecca presenting at XConf EU]({{ site.url }}/images/2018-Rebecca-XConf-EU.png)
 
+
+---- 
+
 * [Neal presenting at YOW! conference, 2018](https://www.youtube.com/watch?v=-Z_Va9iWo0I)
 ![Neal presenting at YOW! conference, 2018]({{ site.url }}/images/2018-Neal-BEA_at_YOW.png)
+
 
 
 ## Presentations _NOT_ by the Authors
