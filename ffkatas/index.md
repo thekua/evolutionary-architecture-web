@@ -14,7 +14,7 @@ Fitness Function katas are intended as a small-group (3-5 people) exercise, usua
 ## Architectural Fitness Functions
 Evolutionary architecture allows different parts of the system to evolve in the ways most sensible to solve a problem. However, we don't want the system to evolve in a way that harms some architectural concern. For example, improving performance with caching might accidentally harm security in the process. How can we build guidelines within the architecture to support change but guard specific attributes? Evolutionary computing defines a _fitness function_ as an objectively quantifiable function used to summarise how close a given design solution is to achieving the set aims. When defining an evolutionary algorithm, the designer seeks a "better" algorithm; the fitness function defines what "better" means in this context. 
 
-As defined in our book [Building Evolutionary Architectures](http://shop.oreilly.com/product/0636920080237.do), we borrow this concept to for _architectural fitness functions_: 
+As defined in our book [Building Evolutionary Architectures](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781492097532/), we borrow this concept to for _architectural fitness functions_: 
 
 > An architectural fitness function provides an objective integrity assessment of some architectural characteristic(s).
 
